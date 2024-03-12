@@ -2,7 +2,7 @@
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
 .vscode/
-IMG_20240220_124108-removebg-preview.png
+#IMG_20240220_124108-removebg-preview.png
 #Cache folder
 .alcache/
 #Symbols folder
@@ -21,3 +21,4 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+#IMG_20240220_124108-removebg-preview.png
