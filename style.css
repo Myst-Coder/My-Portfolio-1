@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* background: black; */
+}
+
+nav {
+  position: fixed; /* Make the navigation bar fixed */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Position it at the left edge of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background: black;
+  background-image: url(./Untitled\ design-High-Quality.jpg);
+  background-size: contain; /* Image is contained within the nav */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: left center; /* Move the background image to the extreme left */
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%; /* Adjusted padding with percentage for responsiveness */
+  flex-wrap: wrap; 
+}
+
+
+/* @media screen and (max-width: 1313px){
+  nav {
+    padding: 0 4%;
+  }
+  ul{
+    flex-direction: column;
+    width: 70%;
+  }
+  li{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1251px){
+  nav {
+    padding: 0 3%;
+  }
+  ul{
+    flex-direction: column;
+    width: 100%;
+  }
+  li{
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 1195px){
+  nav {
+    padding: 0 2%;
+  }
+  ul{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+  }
+  li{
+    margin: 2px 0; 
+    
+  }
+}
+
+@media screen and (max-width: 1151px){
+  nav {
+    padding: 0 1%;
+  }
+  ul{
+    flex-direction: column;
+    width: 70%;
+    margin-left: 20vw;
+  }
+  li{
+    margin: 4px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 3%; 
+    background-image: none;
+  }
+ ul{
+    margin-left: 15vw;
+ }
+}
+
+@media screen and (max-width: 480px) {
+
+  nav {
+    padding: 0 2%;
+  }
+}
+ul{
+  margin-left: 50vw;
+}
+
+ li{
+   display: inline-block;
+   color: #fff;
+   padding: 10px 25px;
+ }
+*/
+
+/* Apply styles to the navigation menu */
+/* nav {
+  display: flex;
+  justify-content: center;
+  background: black;   background-size: cover;
+  background-position: center;
+} */
+
+/* Apply styles to the navigation menu items */
+.ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Align items horizontally */
+}
+
+.li1 {
+  margin: 0 10px;
+}
+
+.li1 a {
+  text-decoration: none;
+  color: white; /* Set text color to white */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease; /* Add transition effect */
+}
+
+.li1 a:hover {
+  background-color: #333; /* Change background color on hover */
+}
+
+/* Apply responsive styles */
+@media screen and (max-width: 1190px) {
+  nav {
+    background-image: none; /* Remove background image */
+    justify-content: space-between; /* Adjust alignment */
+    padding: 0 20px; /* Adjust padding */
+  }
+
+  .ul1 {
+    flex-wrap: wrap; /* Allow items to wrap */
+  }
+
+  .li1 {
+    margin: 10px 0; /* Adjust margin */
+  }
+
+  .li1 a {
+    padding: 10px 15px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+
+
+footer{
+  background-image: url(./Untitled\ design-High-Quality.jpg);
+  background-size: contain; /* Image is contained within the nav */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: left center;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 475px){
+  footer{
+    background-image: none;
+  }
+}
+
+/* Apply styles to the text container */
+.text {
+  background: #22ddd9;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply styles to the paragraph */
+.p1 {
+  font-size: 25px;
+  font-kerning: auto;
+  font-weight: 600;
+  padding: 0 8rem; /* Adjust padding for smaller screens */
+  color: #2d0141;
+  line-height: 1.5; /* Adds gap between lines */
+}
+
+/* Apply styles to the image */
+img {
+  border-radius: 50%;
+  width: 300px; /* Adjust image size for smaller screens */
+  height: 300px; /* Adjust image size for smaller screens */
+  margin-left: 2rem; /* Add margin for spacing */
+}
+
+/* Apply responsiveness */
+@media screen and (max-width: 768px) {
+  .text {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    height: auto; /* Remove fixed height */
+    padding: 5rem 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .p1 {
+    margin-top: 2rem; /* Adjust top margin for spacing */
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  img {
+    width: 200px; /* Adjust image size for smaller screens */
+    height: 200px; /* Adjust image size for smaller screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 2rem; /* Adjust top margin for spacing */
+  }
+}
+
+
+span {
+  color: white;
+  font-family: saddlebrown;
+  font-size: 30px;
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white; /* Starting color */
+  }
+  50% {
+    color: #2d0141; /* Intermediate color */
+  }
+  100% {
+    color: white; /* Ending color */
+  }
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+  /* font-size: 20px; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* padding: 10px 25px; */
+}
+
+.body{
+  line-height: 2rem;
+  background-color: #1cca50;
+  color: #cbd5d7;
+}
+
+#about {
+  padding: 50px;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to paragraphs */
+#about p {
+  animation: fadeInUp 1s ease both;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 30px;
+  }
+
+  #about h2 {
+    font-size: 20px;
+  }
+
+  #about p {
+    font-size: 16px;
+  }
+}
+
+
+/* Apply styles to the contact section */
+#contact {
+  background-color: #333; /* Set background color to dark gray */
+  color: white; /* Set text color to white */
+  padding: 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #fff; /* Set link color to white */
+}
+
+/* Apply animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#contact {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Apply responsiveness */
+@media screen and (max-width: 768px) {
+  #contact {
+    padding: 20px 10px;
+  }
+}
